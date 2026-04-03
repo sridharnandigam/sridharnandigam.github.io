@@ -124,6 +124,13 @@ section {
                 filter: saturate(0.82) brightness(0.82) contrast(1.04);
                 transition: transform 0.25s ease-out, filter 0.25s ease-out;
             }
+            .project-img--logo{
+                @extend .project-img;
+                object-fit: contain;
+                padding: 1rem;
+                background: rgba(255, 255, 255, 0.14);
+                filter: brightness(0.95) contrast(1.04);
+            }
             .proj-link-icon{
                 z-index: 9;
                 position: absolute;
@@ -294,6 +301,8 @@ section {
         display: inline-block;
         align-content: center;
         margin-right: 10px;
+        color: #fff;
+        font-weight: 600;
 
         &--html{
             @extend .tags;
@@ -306,6 +315,7 @@ section {
         &--css{
             @extend .tags;
             background-color: $css;
+            color: #111;
             &:before{
                 content: "CSS";
             }
@@ -327,6 +337,7 @@ section {
         &--tensorflow{
             background-color: $tensorflow;
             @extend .tags;
+            color: #111;
             &:before{
                 content: "Tensorflow";
             }
@@ -341,6 +352,7 @@ section {
         &--react{
             background-color: $react;
             @extend .tags;
+            color: #111;
             &:before{
                 content: "React";
             }
@@ -355,6 +367,7 @@ section {
         &--javascript{
             background-color: $javascript;
             @extend .tags;
+            color: #111;
             &:before{
                 content: "Javascript";
             }
@@ -362,6 +375,7 @@ section {
         &--node{
             background-color: $node;
             @extend .tags;
+            color: #111;
             &:before{
                 content: "Node";
             }
@@ -376,6 +390,7 @@ section {
         &--aws{
             background-color: $aws;
             @extend .tags;
+            color: #111;
             &:before{
                 content: "Amazon Web Services";
             }
@@ -392,6 +407,14 @@ section {
             @extend .tags;
             &:before{
                 content: "SCSS";
+            }
+        }
+        &--linux{
+            background-color: $linux;
+            @extend .tags;
+            color: #111;
+            &:before{
+                content: "Linux";
             }
         }
     }
