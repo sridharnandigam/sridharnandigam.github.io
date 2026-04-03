@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage": "https://sridharnandigam.github.io/portfolio-site",
   "scripts": {
+    "build": "sass scss:dist/css",
     "sass": "sass -w scss:dist/css",
     "deploy": "gh-pages -d dist",
     "start": "http-server dist -p 8000"
