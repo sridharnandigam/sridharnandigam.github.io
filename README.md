@@ -5,7 +5,6 @@ Small static personal site with Sass source files in `scss/` and compiled output
 ## Requirements
 
 - Node.js and npm
-- Python 3 for a quick local static server
 
 ## Install
 
@@ -24,7 +23,7 @@ npm run sass
 Serve the built site from `dist/` in another terminal:
 
 ```bash
-python3 -m http.server 8000 --directory dist
+npm start
 ```
 
 Then open:
@@ -64,7 +63,7 @@ Deployment notes:
 npm install
 npm run sass
 # edit files
-python3 -m http.server 8000 --directory dist
+npm start
 # when ready
 npm run deploy
 ```

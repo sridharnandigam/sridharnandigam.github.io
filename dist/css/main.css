@@ -132,7 +132,7 @@ section#Introduction {
 }
 section#Introduction#Introduction {
   content: "";
-  background: url("../images/austin5.jpg");
+  background: url("../images/intro/austin5.jpg");
   background-size: cover;
   /* &:before {
       content: '';
@@ -406,7 +406,7 @@ main {
 }
 main#Introduction {
   content: "";
-  background: url("../images/austin5.jpg");
+  background: url("../images/intro/austin5.jpg");
   background-size: cover;
   /* &:before {
       content: '';

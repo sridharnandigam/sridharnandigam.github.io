@@ -5,9 +5,9 @@
   "main": "index.js",
   "homepage": "https://sridharnandigam.github.io/portfolio-site",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass -w scss:dist/css",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "http-server dist -p 8000"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "dependencies": {
     "gh-pages": "^6.3.0",
     "sass": "^1.64.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
