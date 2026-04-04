@@ -41,21 +41,9 @@ http://localhost:8000
 
 ## Deployment
 
-This repo already includes a deploy script:
+Pushing to `master` triggers the GitHub Actions workflow in `.github/workflows/deploy.yaml`.
 
-```bash
-npm run deploy
-```
-
-That command publishes `dist/` using the `gh-pages` package.
-
-Deployment notes:
-
-- You need push access to `origin` and working GitHub auth on this machine.
-- The current remote is `git@github.com:sridharnandigam/sridharnandigam.github.io.git`.
-- The current working branch is `master`.
-- `npm run deploy` assumes GitHub Pages is configured to serve the `gh-pages` branch.
-- Since this is a static site, make sure any edits in `scss/` have been compiled into `dist/` before deploying.
+That workflow installs dependencies, runs the Sass build, and deploys the contents of `dist/` to the `gh-pages` branch.
 
 ## Quick Update Flow
 
@@ -64,6 +52,6 @@ npm install
 npm run sass
 # edit files
 npm start
-# when ready
-npm run deploy
+# commit changes
+# push to master
 ```
