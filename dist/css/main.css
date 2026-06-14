@@ -152,6 +152,15 @@ section#Introduction {
   position: relative;
   text-align: center;
 }
+section#Introduction .intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
 section#Introduction .intro-content {
   position: relative;
 }
@@ -167,6 +176,7 @@ section#Introduction .intro-content .profile-pic {
 section#Introduction .icons {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem;
 }
@@ -628,10 +638,7 @@ footer {
   #home {
     padding: 0px;
   }
-  #home .intro-content {
-    padding: 0 1rem;
-  }
-  section#Introduction {
+  section#Introduction .intro-wrapper {
     padding: 1rem;
   }
   .profile-pic {
