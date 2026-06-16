@@ -31,10 +31,6 @@
 
     #home{
         padding: 0px;
-
-        .intro-content{
-            padding: 0 1rem;
-        }
     }
 
     .profile-pic{
@@ -49,7 +45,9 @@
 
     section{
         &#Introduction{
-            padding: 1rem;
+            .intro-wrapper{
+                padding: 1rem;
+            }
         }
         &#Projects{
             .project{

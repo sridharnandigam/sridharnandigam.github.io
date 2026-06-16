@@ -7,7 +7,7 @@
   "scripts": {
     "build": "sass scss:dist/css",
     "sass": "sass -w scss:dist/css",
-    "start": "http-server dist -p 8000"
+    "start": "http-server dist -p 8005"
   },
   "repository": {
     "type": "git",
